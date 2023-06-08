@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         //if (Input.GetKey("s"))
         if (y >=370)
         {
-            rb.AddForce(0, 0, -700 * Time.deltaTime);
+            rb.AddForce(0, 0, -1400 * Time.deltaTime);
             //rb.AddForce(sidewayforce * Time.deltaTime, 0,0, ForceMode.VelocityChange);
         }
 

@@ -85,7 +85,9 @@ public class GameManager_S : MonoBehaviour
         //Time.timeScale = 0f;
         print("GAME OVER!!!!");
 
-        GameOver_Screen.SetActive(true);
+        ///NEED SET TO TRUE///NEED SET TO TRUE///NEED SET TO TRUE///NEED SET TO TRUE
+        
+        //GameOver_Screen.SetActive(true);
     }
 
     public void Winning()

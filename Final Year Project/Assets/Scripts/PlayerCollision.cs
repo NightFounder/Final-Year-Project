@@ -8,6 +8,8 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
 
+    public Rigidbody rb;
+
     public bool win_condition2;
     public bool win_condition3;
     public float min5_sec;
@@ -58,7 +60,17 @@ public class PlayerCollision : MonoBehaviour
             movement.enabled = false;
             win_condition3 = true;
             FindObjectOfType<GameManager_S>().Winning();
+
+        }else if (collisioninfo.collider.tag == "Street")
+        {
+            rb.velocity = new Vector3(0, 0, 10);
+            movement.enabled = false;
+
+        }else if (collisioninfo.collider.tag == "Stars")
+        {
+            // requires rigid body
+            print("STARRRRRRRRRRRRRRRRR");
         }
-        
+
     }
 }

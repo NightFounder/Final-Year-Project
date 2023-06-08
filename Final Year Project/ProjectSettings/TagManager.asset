@@ -8,6 +8,8 @@ TagManager:
   - Win
   - Win2
   - star
+  - Street
+  - Stars
   layers:
   - Default
   - TransparentFX
